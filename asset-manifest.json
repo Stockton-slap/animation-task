@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/animation-task/static/css/main.adef1efa.css",
+    "main.js": "/animation-task/static/js/main.76475072.js",
+    "index.html": "/animation-task/index.html",
+    "main.adef1efa.css.map": "/animation-task/static/css/main.adef1efa.css.map",
+    "main.76475072.js.map": "/animation-task/static/js/main.76475072.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adef1efa.css",
+    "static/js/main.76475072.js"
+  ]
+}
