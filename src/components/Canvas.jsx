@@ -140,16 +140,17 @@ export default function Canvas({
     }
 
     // Function to check boundary collision and change direction
+    // Function to check boundary collision and change direction
     function checkBoundaryCollision(ball) {
       if (
-        ball.x + ball.dx > canvas.width - SQUARE_SIZE / 2 ||
-        ball.x + ball.dx < SQUARE_SIZE / 2
+        ball.x + ball.dx > canvas.width - SQUARE_SIZE / 4 ||
+        ball.x + ball.dx < SQUARE_SIZE / 4
       ) {
         ball.dx = -ball.dx;
       }
       if (
-        ball.y + ball.dy > canvas.height - SQUARE_SIZE / 2 ||
-        ball.y + ball.dy < SQUARE_SIZE / 2
+        ball.y + ball.dy > canvas.height - SQUARE_SIZE / 4 ||
+        ball.y + ball.dy < SQUARE_SIZE / 4
       ) {
         ball.dy = -ball.dy;
       }
@@ -199,5 +200,12 @@ export default function Canvas({
     yellow,
   ]);
 
-  return <canvas id="boardCanvas" width="700" height="700" />;
+  return (
+    <canvas
+      id="boardCanvas"
+      width="720"
+      height="720"
+      style={{ borderRadius: "10px" }}
+    />
+  );
 }
